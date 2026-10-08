@@ -35,3 +35,15 @@ print("First 12 characters:", text[:12])
 print("From index 13 to the end:", text[13:])
 print("Every third character:", text[::3])
 print("Reversed:", text[::-1])
+
+print("\n--- Additional experiment by iva6455-png ---")
+word = "banana"
+first_position = text.find(word)
+last_position = text.rfind(word)
+print("First banana position:", first_position)
+print("Last banana position:", last_position)
+if first_position != -1:
+    between = text[first_position:last_position + len(word)]
+    print("Text from first to last banana:", between)
+else:
+    print("The word banana was not found.")
